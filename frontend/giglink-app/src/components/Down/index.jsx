@@ -1,9 +1,9 @@
 import React from 'react'
 
-function index() {
+function Down() {
   return (
     <div>проверка</div>
   )
 }
 
-export default index
+export default Down

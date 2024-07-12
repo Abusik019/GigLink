@@ -1,0 +1,54 @@
+.navbar{
+    background-color: #F0F1FF;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.navbar img{
+    width: 174px;
+    height: 174px;
+}
+
+.navbar li{
+    font-family: "Prosto One", sans-serif;
+}
+
+.navbar button{
+    width: 126px;
+    height: 57px;
+    border-radius: 42px;
+
+    background-color: transparent;
+    border: 1px black solid;
+    color: #5E64FF;
+    text-align: left;
+
+    background-image: url('../../assets/user.svg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 80%;
+
+    transition: all .3s ease-in-out;
+}
+
+.navbar button:hover{
+    border: 1px #5E64FF solid;
+}
+
+.navbar > li{
+    color: black;
+    transition: color .2s ease-in-out;
+
+    cursor: pointer;
+}
+
+.navbar > li:hover{
+    color: #5E64FF;
+}
+
