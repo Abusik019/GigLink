@@ -1,8 +1,11 @@
+import { HomeTopSide } from '../../components/HomeTopSide'
 import styles from './style.module.css'
 
 function Home() {
   return (
-    <div>Home</div>
+    <div>
+      <HomeTopSide />
+    </div>
   )
 }
 
