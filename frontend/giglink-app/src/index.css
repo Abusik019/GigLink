@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Prosto+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=M+PLUS+Rounded+1c&family=Prosto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Prosto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -9,6 +8,8 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
+  background-color: #F0F1FF;
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -48,13 +49,6 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
 @media (prefers-color-scheme: light) {

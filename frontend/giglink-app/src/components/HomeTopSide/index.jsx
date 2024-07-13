@@ -1,6 +1,10 @@
-import { Navbar } from '../Navbar'
 import styles from './style.module.css'
+import { Navbar } from '../Navbar'
 import cyanItem from '../../assets/cyan_pink-View 3.png'
+import { Swiper } from '../Slider'
+import fingerImg from '../../assets/finger.svg'
+import earthImg from '../../assets/earth.svg'
+import scheduleImg from '../../assets/schedule.svg'
 
 export const HomeTopSide = () => {
   return (
@@ -11,6 +15,28 @@ export const HomeTopSide = () => {
           <p>Данная платформа предлагает возможность<br />для потребителей размещать заказы различных видов<br />и найти специалистов для выполнения работ</p>
           <button>Регистрация</button>
           <img src={cyanItem} className={styles.cyanItem}/>
+        </div>
+        <Swiper />
+        <div className={styles.advantages}>
+          <h1>Мы поможем работать более <span>эффективно</span></h1>
+          <p>Мы предлагаем вам полный сет<br />инструментов и функций для лучшего<br />взаимодействия с платформой</p>
+          <ul className={styles.advantagesList}>
+            <li>
+              <img src={fingerImg}/>
+              <h1>Используйте понятный интерфейс</h1>
+              <p>мы разработали интуитивный и простой интерфейс, с которым работа будет приносить удовольствие</p>
+            </li>
+            <li>
+              <img src={scheduleImg}/>
+              <h1>Получайте ежемесячные отчёты</h1>
+              <p>Регулярные отчёты состоят из всех необходимых вам деталей и информации по проекту</p>
+            </li>
+            <li>
+              <img src={earthImg}/>
+              <h1>В любой точке<br />планеты</h1>
+              <p>Сохраняйте связь с работой находясь в любом месте, в любое время, всё что вам нужно - это доступ к интернету</p>
+            </li>
+          </ul>
         </div>
     </div>
   )
