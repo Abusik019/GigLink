@@ -1,0 +1,84 @@
+.regis {
+    width: 453px;
+    height: 76px;
+    background-color:#5E64FF;
+    color: #FFFFFF;
+    border-radius: 38px;
+    font-size: 24px;
+    font-family: "Prosto One";
+    margin-top: 164px;
+}
+.comment {
+    font-family: "Bakbak One";
+    font-size: 64px;
+    color: #000000;
+    margin-top: 52px;
+    margin-bottom: 55px;
+    
+}
+.rodComm {
+    position: relative;
+
+}
+.comment1 {
+    width: 621px;
+   margin: auto;
+   font-size: 20px;
+   font-family: "Inter";
+  
+}
+.imageLine {
+    position: relative;
+    top: -520px;
+}
+.avatar {
+    margin-top: 30px;
+}
+.comment1 h5 {
+    font-family: "Rounded Mplus 1c";
+    font-size: 20px;
+}
+.elips {
+    margin-left: 15px;
+}
+.description {
+    width: 1168px;
+    height: 609px;
+    background: linear-gradient(90deg, rgba(94, 100, 255, 0.3) 1%, rgba(94, 100, 255, 1) 95%);
+    border-radius: 66px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #FFFFFF;
+    font-family: "Prosto One";
+    margin: auto;
+    
+}
+.footer img {
+    width: 228px;
+}
+.rod {
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    color: #FFFFFF;
+    margin-top: 123px;
+}
+.footer {
+    width: 1184px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.desc {
+    color: #908C8C;
+}
+.footer ul li {
+ font-size: 16px;
+ font-family: "Prosto One";
+ margin-bottom: 9px;
+}
+
+
