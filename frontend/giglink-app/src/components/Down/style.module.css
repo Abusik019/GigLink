@@ -1,46 +1,54 @@
 .regis {
     width: 453px;
     height: 76px;
-    background-color:#5E64FF;
+    background-color: #5E64FF;
     color: #FFFFFF;
     border-radius: 38px;
     font-size: 24px;
     font-family: "Prosto One";
-    margin-top: 164px;
+    margin-top: 200px;
 }
+
 .comment {
-    font-family: "Bakbak One";
+    font-family: "Bakbak One", sans-serif;
+    font-weight: 400;
     font-size: 64px;
     color: #000000;
     margin-top: 52px;
     margin-bottom: 55px;
-    
 }
+
 .rodComm {
     position: relative;
-
 }
+
 .comment1 {
     width: 621px;
-   margin: auto;
-   font-size: 20px;
-   font-family: "Inter";
-  
+    margin: auto;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+
 }
+
 .imageLine {
     position: relative;
     top: -520px;
 }
+
 .avatar {
     margin-top: 30px;
 }
+
 .comment1 h5 {
-    font-family: "Rounded Mplus 1c";
+    font-family: "Rounded Mplus 1c", sans-serif;
+    font-weight: 500;
     font-size: 20px;
 }
+
 .elips {
     margin-left: 15px;
 }
+
 .description {
     width: 1168px;
     height: 609px;
@@ -54,11 +62,13 @@
     color: #FFFFFF;
     font-family: "Prosto One";
     margin: auto;
-    
+
 }
+
 .footer img {
     width: 228px;
 }
+
 .rod {
     display: flex;
     justify-content: center;
@@ -66,19 +76,27 @@
     color: #FFFFFF;
     margin-top: 123px;
 }
+
 .footer {
     width: 1184px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: left;
 }
+
 .desc {
     color: #908C8C;
 }
+
 .footer ul li {
- font-size: 16px;
- font-family: "Prosto One";
- margin-bottom: 9px;
+    font-size: 16px;
+    font-family: "Prosto One";
+    margin-bottom: 9px;
+    transition: all .3s ease-in-out;
 }
 
-
+.footer ul li:hover:not(.desc) {
+    color: #6368FF;
+    cursor: pointer;
+}

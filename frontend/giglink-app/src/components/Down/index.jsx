@@ -9,7 +9,7 @@ import Logo from "../../assets/transparent-logo.svg";
 function Down() {
   return (
     <div>
-      <button className={style.regis}>ЗАРЕГЕСТРИРОВАТЬСЯ</button>
+      <button className={style.regis}>ЗАРЕГИСТРИРОВАТЬСЯ</button>
       <h1 className={style.comment}>Отзывы наших клиентов</h1>
       <div className={style.rodComm}>
         <p className={style.comment1}>
