@@ -1,18 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "../Down/style.module.css";
-import Line from "../../assets/Line 2.svg";
+import Line from "../../assets/icons8-вперед-90.png";
+import Line1 from "../../assets/icons8-вперед-90 (1).png";
 import Avatar from "../../assets/avatar.svg";
 import Elipse from "../../assets/Ellipse 4.svg";
 import Elipse1 from "../../assets/Ellipse 5.svg";
 import Logo from "../../assets/transparent-logo.svg";
 
 function Down() {
+
+  const [count, setCount] = useState(1)
+
+  function handleDec(){
+    if(count > 1){
+      setCount(count - 1)
+    } else {
+      setCount(count + 2)
+    }
+  }
+
+  function handleInc(){
+    if(count < 3){
+      setCount(count + 1)
+    }else {
+      setCount(count - 2)
+    }
+  }
+
   return (
     <div>
       <button className={style.regis}>ЗАРЕГИСТРИРОВАТЬСЯ</button>
       <h1 className={style.comment}>Отзывы наших клиентов</h1>
       <div className={style.rodComm}>
-        <p className={style.comment1}>
+       {count === 1 && ( <p className={style.comment1}>
           Я уже несколько лет работаю на этой фриланс платформе и могу с
           уверенностью сказать, что это одно из лучших мест для поиска проектов
           и заработка. Здесь я нашел множество интересных заказов и клиентов, с
@@ -26,8 +46,42 @@ function Down() {
           <img src={Elipse} alt="" />
           <img className={style.elips} src={Elipse1} alt="" />
           <img className={style.elips} src={Elipse1} alt="" />
-        </p>
-        <img className={style.imageLine} src={Line} alt="" />
+        </p>)}
+
+        {count === 2 && ( <p className={style.comment1}>
+          Я уже несколько лет работаю на этой фриланс платформе и могу с
+          уверенностью сказать, что это одно из лучших мест для поиска проектов
+          и заработка. Здесь я нашел множество интересных заказов и клиентов, с
+          которыми продолжаю успешно сотрудничать до сих пор. Платформа
+          предоставляет удобный и безопасный способ коммуникации с заказчиками,
+          а также защиту от возможных споров. Спасибо этой платформе за
+          возможность самореализоваться и заработать хорошие деньги.
+          <br />
+          <img className={style.avatar} src={Avatar} alt="" />
+          <h5>Aliev Ali Alievich</h5>
+          <img  src={Elipse1} alt="" />
+          <img className={style.elips} src={Elipse} alt="" />
+          <img className={style.elips} src={Elipse1} alt="" />
+        </p>)}
+
+        {count === 3 && (<p className={style.comment1}>
+          Я уже несколько лет работаю на этой фриланс платформе и могу с
+          уверенностью сказать, что это одно из лучших мест для поиска проектов
+          и заработка. Здесь я нашел множество интересных заказов и клиентов, с
+          которыми продолжаю успешно сотрудничать до сих пор. Платформа
+          предоставляет удобный и безопасный способ коммуникации с заказчиками,
+          а также защиту от возможных споров. Спасибо этой платформе за
+          возможность самореализоваться и заработать хорошие деньги.
+          <br />
+          <img className={style.avatar} src={Avatar} alt="" />
+          <h5>Sergeev Sergey Sergeevich</h5>
+          <img  src={Elipse1} alt="" />
+          <img className={style.elips} src={Elipse1} alt="" />
+          <img className={style.elips} src={Elipse} alt="" />
+        </p>)}
+        <img onClick={handleDec} className={style.imageLine} src={Line1} alt="" />
+        <img onClick={handleInc} className={style.imageLine1} src={Line} alt="" />
+
 
         <div className={style.description}>
           Хотите улучшить свои навыки и стать востребованным специалистом на

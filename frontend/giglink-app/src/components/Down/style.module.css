@@ -33,6 +33,12 @@
 .imageLine {
     position: relative;
     top: -520px;
+    left: -400px;
+}
+.imageLine1 {
+    position: relative;
+    top: -520px;
+    left: 400px;
 }
 
 .avatar {
