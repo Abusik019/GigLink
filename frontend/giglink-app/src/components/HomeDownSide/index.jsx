@@ -1,13 +1,14 @@
-import React, { useState } from "react";
-import style from "../Down/style.module.css";
+import React, { useEffect, useState } from "react";
+import style from "./style.module.css";
 import Line from "../../assets/icons8-вперед-90.png";
 import Line1 from "../../assets/icons8-вперед-90 (1).png";
 import Avatar from "../../assets/avatar.svg";
 import Elipse from "../../assets/Ellipse 4.svg";
 import Elipse1 from "../../assets/Ellipse 5.svg";
 import Logo from "../../assets/transparent-logo.svg";
+import Modal from '../Modal/index';
 
-function Down() {
+function HomeDownSide() {
 
   const [count, setCount] = useState(1)
 
@@ -27,9 +28,22 @@ function Down() {
     }
   }
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  useEffect(() => {
+    document.body.classList.toggle('modal-open', isModalOpen);
+    return () => {
+      document.body.classList.remove('modal-open');
+    };
+  }, [isModalOpen]);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
   return (
     <div>
-      <button className={style.regis}>ЗАРЕГИСТРИРОВАТЬСЯ</button>
+    <Modal isOpen={isModalOpen} onClose={closeModal} />
+      <button className={style.regis} onClick={openModal}>ЗАРЕГИСТРИРОВАТЬСЯ</button>
       <h1 className={style.comment}>Отзывы наших клиентов</h1>
       <div className={style.rodComm}>
        {count === 1 && ( <p className={style.comment1}>
@@ -133,4 +147,4 @@ function Down() {
   );
 }
 
-export default Down;
+export default HomeDownSide;

@@ -99,10 +99,13 @@ export const Navbar = () => {
                         </ul>
                     </li>
                     <li className={styles.dropdown}>
-                        <a href="#smm">Реклама</a>
+                        <a href="#smm">Реклама и SMM</a>
                         <ul className={styles.dropdownMenu}>
                             <li>
                                 <a href="#">Контекстная Реклама</a>
+                            </li>
+                            <li>
+                                <a href="#">Социальные Сети и SMM</a>
                             </li>
                             <li>
                                 <a href="#">Базы данных и Клиентов</a>
@@ -119,10 +122,79 @@ export const Navbar = () => {
                         </ul>
                     </li>
                     <li className={styles.dropdown}>
-                        <a href="#smm">Социальные сети</a>
+                        <a href="#smm">SEO</a>
                         <ul className={styles.dropdownMenu}>
                             <li>
-                                <a href="#">Социальные Сети и SMM</a>
+                                <a href="#">SEO</a>
+                            </li>
+                            <li>
+                                <a href="#">Трафик</a>
+                            </li>
+                            <li>
+                                <a href="#">Статистика и анализ</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li className={styles.dropdown}>
+                        <a href="#smm">Аудио и видео</a>
+                        <ul className={styles.dropdownMenu}>
+                            <li>
+                                <a href="#">Аудиозапись и озвучка</a>
+                            </li>
+                            <li>
+                                <a href="#">Музыка и песни</a>
+                            </li>
+                            <li>
+                                <a href="#">Редактирование аудио</a>
+                            </li>
+                            <li>
+                                <a href="#">Интро</a>
+                            </li>
+                            <li>
+                                <a href="#">Анимация логотипа</a>
+                            </li>
+                            <li>
+                                <a href="#">Видеоролики</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li className={styles.dropdown}>
+                        <a href="#smm">Бизнес</a>
+                        <ul className={styles.dropdownMenu}>
+                            <li>
+                                <a href="#">Персональный помощник</a>
+                            </li>
+                            <li>
+                                <a href="#">Бухгалтерия и налоги</a>
+                            </li>
+                            <li>
+                                <a href="#">Обзвоны и продажи</a>
+                            </li>
+                            <li>
+                                <a href="#">Юридическая помощь</a>
+                            </li>
+                            <li>
+                                <a href="#">HR-поддержка</a>
+                            </li>
+                            <li>
+                                <a href="#">Обучение и консалтинг</a>
+                            </li>
+                            <li>
+                                <a href="#">Стройка и ремонт</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li className={styles.dropdown}>
+                        <a href="#smm">Аккаунт</a>
+                        <ul className={styles.dropdownMenu}>
+                            <li>
+                                <a href="#">Личные данные</a>
+                            </li>
+                            <li>
+                                <a href="#">Настройки</a>
+                            </li>
+                            <li>
+                                <a href="#">Помощь</a>
                             </li>
                         </ul>
                     </li>

@@ -1,12 +1,11 @@
 import { HomeTopSide } from '../../components/HomeTopSide'
-import Down from '../../components/Down'
-import styles from './style.module.css'
+import HomeDownSide from '../../components/HomeDownSide/index';
 
 function Home() {
   return (
     <div>
       <HomeTopSide />
-      <Down/>
+      <HomeDownSide/>
     </div>
   )
 }
