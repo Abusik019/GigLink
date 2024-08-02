@@ -1,7 +1,16 @@
 import styles from "./style.module.css";
 import logo from "../../assets/transparent-logo.svg";
+import { useState } from "react";
+import Login from "../../login";
 
-export const Navbar = () => {
+
+export const Navbar = ({ setOpenLogin}) => {
+
+   
+
+    function handleOpen(){
+        setOpenLogin(true)
+    }
     return (
         <>
             <nav className={styles.navbar}>
@@ -199,10 +208,12 @@ export const Navbar = () => {
                         </ul>
                     </li>
                     <li className={styles.login}>
-                        <a href="#">Вход</a>
+                        <a onClick={handleOpen}>Вход</a>
                     </li>
                 </ul>
             </nav>
+            
+           
         </>
     );
 };

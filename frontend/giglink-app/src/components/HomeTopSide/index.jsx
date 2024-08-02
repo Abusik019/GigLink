@@ -7,8 +7,9 @@ import fingerImg from '../../assets/finger.svg';
 import earthImg from '../../assets/earth.svg';
 import scheduleImg from '../../assets/schedule.svg';
 import Modal from '../Modal';
+import Login from '../../login';
 
-export const HomeTopSide = () => {
+export const HomeTopSide = ({openLogin, setOpenLogin}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
@@ -23,7 +24,7 @@ export const HomeTopSide = () => {
 
   return (
     <div className={styles.homeTopSide}>
-      <Navbar />
+      <Navbar openLogin={openLogin} setOpenLogin={setOpenLogin} />
       <div className={styles.textContentBlock}>
         <h1>Откройте мир возможностей с<br /><span>GigLink</span><br /><br />где каждый проект - это история успеха</h1>
         <p>Данная платформа предлагает возможность<br />для потребителей размещать заказы различных видов<br />и найти специалистов для выполнения работ</p>
@@ -52,7 +53,8 @@ export const HomeTopSide = () => {
           </li>
         </ul>
       </div>
-      <Modal isOpen={isModalOpen} onClose={closeModal} />
+      <Modal setOpenLogin={setOpenLogin} isOpen={isModalOpen} onClose={closeModal} />
+      {openLogin && <Login isOpen={openModal} setOpenLogin={setOpenLogin}/>}
     </div>
   );
 };

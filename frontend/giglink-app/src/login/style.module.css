@@ -39,7 +39,7 @@
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    /* padding: 70px 100px 0 100px; */
+    padding: 120px 100px 0 100px;
     gap: 20px;    
 }
 
@@ -74,15 +74,4 @@
 
     font-size: 17px;
     font-weight: 700;
-}
-
-.isHaveAccount{
-    width: 176px;
-    height: fit-content;
-
-    background-color: transparent;
-    text-decoration: underline;
-    color: #351F8B;
-
-    padding: 0;
 }
