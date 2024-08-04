@@ -8,7 +8,7 @@ import Elipse1 from "../../assets/Ellipse 5.svg";
 import Logo from "../../assets/transparent-logo.svg";
 import Modal from '../Modal/index';
 
-function HomeDownSide() {
+function HomeDownSide({setOpenLogin}) {
 
   const [count, setCount] = useState(1)
 
@@ -42,7 +42,7 @@ function HomeDownSide() {
 
   return (
     <div>
-    <Modal isOpen={isModalOpen} onClose={closeModal} />
+    <Modal setOpenLogin={setOpenLogin} isOpen={isModalOpen} onClose={closeModal} />
       <button className={style.regis} onClick={openModal}>ЗАРЕГИСТРИРОВАТЬСЯ</button>
       <h1 className={style.comment}>Отзывы наших клиентов</h1>
       <div className={style.rodComm}>
